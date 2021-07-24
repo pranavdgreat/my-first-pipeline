@@ -1,0 +1,24 @@
+pipeline
+
+{ agent any
+stages
+{
+    stage ('stage-1.1')
+    {
+        steps
+        {
+            sh 'echo hello Pranav !!'
+            sh 'echo welcome to Jenkins'
+        }
+    }
+    stage ('stage-1.2 code build')
+    {
+        steps 
+        {
+            sh 'echo yo are in stage 1.2'
+        }
+    }
+}
+
+
+}
